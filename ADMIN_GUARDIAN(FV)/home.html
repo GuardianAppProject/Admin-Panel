@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html  lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main_css.css">
+        <script src="lib/jQuery/jquery-3.5.1.min.js"></script>
+        <script src="lib/popper/popper.min.js"></script>
+        <script src="lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+        
+        <title>Home</title>
+        <style>
+            
+        </style>
+    </head>
+    <body dir="rtl">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+            <div class="container" style="font-size:14.5px">
+                <a href="#"><img src="img/logo.png" width="45"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item active m-1 mr-2" style="text-align: right;"> 
+                            <a class="nav-link" href="index.php">خانه</a>
+                        </li>
+                        <li class="navbar-item m-1  mr-2"  style="text-align: right;">
+                            <a class="nav-link" href="AdminPanel.php">پنل ادمین</a>
+                        </li>
+                        <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                            <a class="nav-link" href="#AboutGuardian">گاردین چیست؟</a>
+                        </li>
+                        <li class="navbar-item m-1  mr-2"  style="text-align: right;">
+                            <a class="nav-link" href="#adminApp">نصب برنامه</a>
+                        </li>
+                        <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                            <a class="nav-link" href="#ContactUs">تماس با ما</a>
+                        </li>
+                        <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                            <a class="nav-link" href="#AboutUs">درباره ی ما</a>
+                        </li>
+                        <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                            <a class="nav-link" href="#WorkWithUs">همکاری با ما</a>
+                        </li>
+                        <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                            <a class="nav-link" href="https://www.guardianapp.ir/">وبسایت گاردین</a>
+                        </li>
+                        <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                            <button id="LightDarkBtn" class="btn btn-dark shadow round text-white" onclick="LightDark()">شب / روز</button>
+                        </li>
+                        <li class="navbar-item m-1">
+                            <a id="login" class="nav-link btn bg-white shadow round text-primary" href="login.php">ورود</a>
+                        </li>
+                        <li class="navbar-item m-1">
+                            <a id="register" class="nav-link btn bg-white shadow round text-primary" href="RegisterIn.php">ثبت نام</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12" style="margin-top: 55px;">
+                    <div class="card" style="background-color: #a07aff;height: 600px;margin-top:50px;">
+                        <div id="mainImg" class="carousel slide" data-ride="carousel"  style="height:100%; width:100%;">
+
+                            <ul class="carousel-indicators">
+                              <li data-target="#mainImg" style="background-color:gray;" data-slide-to="0" class="active"></li>
+                              <li data-target="#mainImg" style="background-color:gray;" data-slide-to="1"></li>
+                              <li data-target="#mainImg" style="background-color:gray;" data-slide-to="2"></li>
+                            </ul>
+                          
+                            <div class="carousel-inner" style="height:100%; width:100%;">
+                              <div class="carousel-item active" style="height:100%; width:100%;">
+                                <div style="height:100%; width:100%; background-image: url(img/main_background.png); background-repeat: no-repeat; background-size: cover;"></div>
+                              </div>
+                              <div class="carousel-item" style="height:100%; width:100%;">
+                                <div style="height:100%; width:100%; background-image: url(img/mb-2.png); background-repeat: no-repeat; background-size: cover;"></div>
+                              </div>
+                              <div class="carousel-item"  style="height:100%; width:100%;">
+                                <div  style="height:100%; width:100%; background-image: url(img/mb-3.png); background-repeat: no-repeat; background-size: cover;"></div>
+                              </div>
+                            </div>
+    
+                            <a class="carousel-control-prev" href="#mainImg" data-slide="prev">
+                              <span class="carousel-control-prev-icon" style="background-color:gray;"></span>
+                            </a>
+                            <a class="carousel-control-next"  href="#mainImg" data-slide="next">
+                              <span class="carousel-control-next-icon" style="background-color:gray;"></span>
+                            </a>
+                          
+                          </div>
+                    </div>
+                    
+                    
+                      <div style="margin-top: 55px;"></div>
+                </div>
+            </div>
+        </div>
+    <div class="container" id="AboutGuardian">
+        <div class="row">
+            <div style="margin-top: 50px;"></div>
+                <div id="aboutGuardian_road" class="card shadow round" style="padding: 100px; opacity: 92%;text-align: center;background-color:#E8E8E8;color: #100038;">
+                    <div class="card-header round shadow" style="margin-bottom: 20px;">
+                        <h4>گاردین به روایت تصویر</h4>
+                    </div>
+                    <img class="card-img" src="img/roadmap_guardian.png">
+                </div>
+            <div style="margin-top: 50px;"></div>
+        </div>
+        <div class="row">
+            <div style="margin-top: 50px;"></div>
+                <div id="aboutGuardian_app"  class="card shadow round" style="padding: 100px;opacity: 92%;background-color: #E8E8E8;color: #100038;">
+                    <div class="card-header round shadow" style="text-align: center;margin-bottom: 100px;">
+                        <h4>راهکار های گاردین به من چیست؟</h4>
+                        <p>
+                            این نرم افزار کاملا هوشمند بوده و با پرسیدن سوال های صوتی و دریافت پاسخ آنها در حین سفر از راننده وهمچنین اطلاعاتی که در گذشته از کاربر محاسبه کرده و تجمیع آنها با اطلاعات سفر، تلاش می کند تا سطح هوشیاری راننده را در تمام زمان سفر در بالاترین سطح خود نگه دارد
+                        </p>
+                    </div>
+                    <img class="card-img" src="img/app.png">
+                </div>
+            <div style="margin-top: 40px;"></div>
+        </div>
+        
+    </div>
+        
+    <div class="container" id="AttributesDiv">
+        <div class="row">
+                <div class="col-12 col-md-12" style="margin-top: 55px;">
+                    <h4 style="text-align:center;text-decoration: underline">قابلیت ها</h4>
+                    <div class="card" style="background: transparent;margin-top:50px;">
+                        <div id="Attributes" class="carousel slide" data-ride="carousel"  style="height:100%; width:100%;">
+
+                            <ul class="carousel-indicators">
+                              <li data-target="#Attributes" data-slide-to="0" class="active"></li>
+                              <li data-target="#Attributes" data-slide-to="1"></li>
+                              <li data-target="#Attributes" data-slide-to="2"></li>
+                              <li data-target="#Attributes" data-slide-to="3"></li>
+                            </ul>
+                          
+                            <div class="carousel-inner" style="height:100%; width:100%;">
+                              <div class="carousel-item active" style="height:100%; width:100%;">
+                                  <div class=" flex-row row">
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar1" class="card" style="background-color:#E8E8E8‏; opacity: 88%;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      هوشمند
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/smart.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      		                                ورود خودکار به برنامه در هنگام نشستن شخص در خودرو
+
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar2" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      خودکار و ساده
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/sleep.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      
+		                                اندازه گیری هوشمند میزان خواب کاربر
+		                            
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar3" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                     جزئیات موثر
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/weather.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      
+		                                گزارش وضعیت آب و هوایی مسیر به کاربر
+		                            
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="carousel-item" style="height:100%; width:100%;">
+                                <div class=" flex-row row">
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar4" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      سرعت سنج
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/speed.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      
+                                        محاسبه ی خودکار سرعت، شتاب و توقف های مورد نیاز کاربر در طول سفر
+                                    
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar5" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      تشخیص  انواع جاده
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/road.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      
+                                        نشان دادن اطلاعات نوع جاده و مسیر رانندگی، ترافیک مسیر و محدوده های خطر در طول مسیر سفر
+                                    
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar6" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      استراحت بهینه
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/rest.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      
+                                        ارائه ی پیشنهاد های استراحت در مواقع لازم در نزدیک ترین اقامتگاه، مجتمع رفاهی، پمپ بنزین ها و استراحتگاه ها
+                                    
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="carousel-item"  style="height:100%; width:100%;">
+                                <div class=" flex-row row">
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar7" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      همراه
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/refahi.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      
+                                        بهترین پیشنهاد های استراحت بعد از دو الی سه ساعت رانندگی و پیشنهاد توقف و نوشیدن قهوه/چای
+                                    
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar8" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      هوشیار
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/danger.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      
+                                        تشخیص حالت خطر به طور هوشمند در مواقعی که راننده وضعیت مناسبی ندارد و برقراری ارتباط صوتی با کاربر و جلوگیری از حادثه
+                                    
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar9" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      مسیر یابی
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/routing.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                                      
+                                        امکان مسیریابی سفر با قابلیت تنظیم حالت تاریک/روشن
+                                    
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item"  style="height:100%; width:100%;">
+                                <div class=" flex-row row">
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar10" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      صدای محافظ
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/audio.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                        تمام قابلیت های برنامه به صورت صوتی بوده و کاربر به سهولت می تواند از آنها استفاده کند
+                                                    </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar11" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      ساده
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/simplicity.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                        سادگی برای استفاده ی کاربران و عدم پیچیدگی
+                                                    </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-12" style="height:100%;">
+                                          <div id="attributeCar12" class="card" style="background-color:#E8E8E8‏;">
+                                              <div class="card-header">
+                                                  <h4 style="text-align:center;">
+                                                      رابط کاربری
+                                                  </h4>
+                                              </div>
+                                              <div class="card-body" style="padding:35px;">
+                                                  <img style="height:100%; width:100%;" src="img/ui.png">
+                                              </div>
+                                              <div class="card-footer">
+                                                  <p style="text-align:center;">
+                                        رابط کاربری منحصر به فرد و جذاب برای راحتی کاربران
+                                    </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#Attributes" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#Attributes" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          
+                          </div>
+                    </div>
+                    
+                    
+                      <div style="margin-top: 55px;"></div>
+                </div>
+            </div>
+    </div>    
+
+    <div class="container" id="adminApp">
+        <div class="row">
+            
+            <div class="col-12 col-md-12">
+                <div style="margin-top: 100px;"></div>
+                    <h4 style="text-align: center;text-decoration: underline;">همین حالا دریافت کن</h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4 text-center justify-content-center">
+                            <button style="background:transparent;border:none;text-align: center;">
+                                <img src="img/cafebazaar.png" height="300px" >
+                            </button>
+                            <div style="text-align: center;">
+                                <a href="#" style="color: rgb(110, 14, 14);" class="downloadText ">کافه بازار</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center justify-content-center">
+                            <button style="background:transparent;border:none;text-align: center;">
+                                <img  src="img/playstore.png" height="300px">
+                            </button>
+                            <div style="text-align: center;">
+                                <a href="#"  class="downloadText "><span style="color:red">go</span><span style="color:yellow">o</span><span style="color:lightblue">gle</span><span style="color:green"> play</span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center justify-content-center">
+                            <button style="background:transparent;border:none;text-align: center;">
+                                <img src="img/logo.png" height="300px">
+                            </button>
+                            <div style="text-align: center;">
+                                <a href="#" style="color: #5223c7;" class="downloadText ">دریافت مستقیم</a>
+                            </div>
+                        </div>
+                    </div>
+                <div style="margin-top:50px;"></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="container" id="AboutUs">
+        <div class="row">
+            
+            <div class="col-12 col-md-12">
+                <div style="margin-top: 55px;"></div>
+                <div id="AboutUsDiv" class="card shadowCard round" style="margin-top: 70px;background-color: #c6cfec;color: #100038;">
+                    <div class="card-header text-center" style="padding-top:35px;">
+                        <h4>درباره ما</h4>
+                        
+                    </div>
+                    <div class="card-body text-center" style="padding-right:10%;padding-left:10%;padding-bottom: 50px;">
+                        ایده ی گاردین یک ایده ی نوآورانه در زمینه ی پیشگیری از تصادفات رانندگی است که در دی ماه ۱۳۹۶ متولد شد
+                        
+در بهمن ماه ۱۳۹۶ گاردین در جشنواره ی ایده ها و فرصت ها در بین ایده ها در سطح کشوری مقام اول را کسب کرد و پس از آن گاردین به عنوان یک شرکت پیشگام استارتاپی مسر توسعه و رشد خود را آغاز کرد
+تیم گاردین یک تیم جوان و متشکل از دانشجوهای دانشگاه های صنعتی شریف و علم و صنعت است که با پشتکاری که در این زمینه برای تیم وجود داشته است، در طی این مسیر با وجود تمام چالش ها مسیر توسعه ی اپلیکیشن روز به روز طی شده است و این پشتکار، گاردین را به یک استارتاپ رو به پیشرفت با رشد بالا تبدیل کرده است که در این زمینه با ایجاد نوآوری رو به پیشرفت است به گونه ای که گاردین طی ایجاد نسخه های بعدی اپلیکیشن علاوه بر فعالیت بنیادین و گسترده در حوزه ی پیشگیری از تصادفات و کمک به سالم سلامت کردن مسافران، انقلابی در صنعت گردشگری و سفرها ایجاد خواهد کرد
+امید است که بتوانیم در این زمینه ی حیاتی در کشور قدم برداریم و به کاهش تصادفات در کشور و بهبود فرهنگ رانندگی مردم عزیز کشورمان کمک کنیم؛ و در عین حال سفری لذت بخش را برای تمام رانندگان به ارمغان بیاوریم و به لذت بخش تر شدن سفر برای رانندگان کمک های شایانی کنیم
+                    </div>
+                    
+                </div>
+                <div style="margin-top:30px;"></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+        <div class="container" id ="WorkWithUs">
+            <div class="row" >
+                <div class="col-12 col-md-12" style="margin-top: 25px;">
+                    <div class="card shadowCard round" id="WorkWithUsDiv" style="margin-top: 70px;background-color: #c6cfec;color: #100038;">
+                        <div class="card-header text-center"  style="padding-top:35px;">
+                            <h4 style="text-align: center;">همکاری با ما</h4>
+                            
+                        </div>
+                        <div class="card-body text-center" style="padding-right:10%;padding-left:10%;padding-bottom: 50px;">
+                            گاردین می تواند برای شرکت های تاکسیرانی، اتوبوسرانی، ارگان هاو نهاد های دولتی و خصوصی که تعدادی خودرو و رانندهدارند، ارزش آفرینی کند و به این شرکت ها خدمات ارائه دهد 
+                            رانندگان این شرکت ها می توانند از طرف شرکت تشویق به نصب برنامه شوند و گاردین نسخه ی ادمین این امکان را به مدیریت شرکت ها یا مسئول بخش مربوطه می دهد که بتواند وضعیت رانندگی رانندگان شرکت، رتبه بندی ها و ریز اطلاعات رانندگی هر راننده اعم از سرعت خودرو، شتاب خودرو، میزان خواب راننده، لرزش خودرو، میزان رانندگی بدون توقف شخص، ساعت رانندگی فرد، نوع جاده های مورد تردد راننده، ترافیک مسیر و رفتار ترافیکی فرد، محدوده های خطر جاده و وضعیت آب و هوایی جاده ها و ... را به صورت میانگین وضعیت کلی راننده و همچنین به صورت جزئی و روزانه در نسخه ی ادمین گاردین ملاحظه کند و پس از آن از این اطلاعات و داده ها برای امتیاز دادن برنامه به رانندگان شرکت، رتبه بندی، دادن مزایا به رانندگان بهتر و ... استفاده کند و با استفاده از این خدمات در راستای گسترش کسب و کار خود و بهبود مشتری مداری و رشد اقتصادی و فناورانه قدم بردارد
+                            
+                        </div>
+                        <div class="card-footer text-center" >
+                            برای کسب اطلاعات بیشتر برای راه های همکاری به پست الکترونیک زیر مراجعه کنید
+                            <br>
+                            corporate@guardianapp.ir
+                            <br>
+                            یا با شماره تلفن زیر تماس حاصل فرمایید
+                            <br>
+                            0930 500 6036
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="ContactUs">
+            <div class="row">
+    
+                <div class="col-12 col-md-12">
+                    <div style="margin-top: 150px;"></div>
+                    <div id="ContactUsDiv" class="card shadowCard round" style="margin-top: 70px;background-color: #c6cfec;color: #100038;">
+                        <div class="card-header text-center"  style="padding-top:35px;">
+                            <h4>تماس با ما</h4>
+                            
+                        </div>
+                        <div class="card-body text-center" style="padding-right:10%;padding-left:10%;padding-bottom: 50px;">
+                            :ارتباط با تیم پشتیبانی گاردین                        
+                            <br>
+                            support@guardianapp.ir
+                            <br>
+                            :کسب اطلاعات بیشتر و سوالات درباره ی گاردین
+                            <br>
+                            info@guardianapp.ir
+                            <br>
+                            :ارتباط با واحد همکاری با ما گاردین و بررسی شرایط همکاری
+                            <br>
+                            corporate@guardianapp.ir
+                            <br>
+                            :یا در صورت لزوم شماره ی زیر تماس بگیرید
+                            <br>
+                            0930 500 6036
+                            <br>
+                            :وبسایت گاردین
+                            <br>
+                            <a href="https://www.guardianapp.ir/" class="card-link">guardianapp.ir</a>
+                            <br>
+                        </div>
+                        <div class="card-footer text-center">
+                            برای کسب اطلاعات بیشتر برای راه های همکاری به پست الکترونیک زیر مراجعه کنید
+                            <br>
+                            corporate@guardianapp.ir
+                            <br>
+                            یا با شماره تلفن زیر تماس حاصل فرمایید
+                            <br>
+                            0930 500 6036
+                        </div>
+                    </div>
+                    <div style="margin-top:200px;"></div>
+                </div>
+                
+            </div>
+    
+        </div>
+
+        
+       
+        <div style="margin-top: 110px;"></div>
+        <div id="footer" style="background-color:#4149af;height: 200px;width: 100% !important;">
+            
+            <div style="height: 20px; text-align: center;">
+                <h4 class="footerText" style="color: white;">گاردین</h4>
+                <img src="img/logo.png" width="40px">
+            </div>
+            <div class="row justify-content-center" style="margin-top:100px;font-family: ebtekar;">
+                <div class="col-2 col-xl-1">
+                    <h5><a class="footerText" href="#adminApp">دریافت گاردین</a></h5>
+                </div>
+                <div class="col-2 col-xl-1">
+                    <h5><a class="footerText" href="#WorkWithUs">همکاری با ما</a></h5>
+                </div>
+                <div class="col-2 col-xl-1">
+                    <h5><a class="footerText" href="#AboutGuardian"> گاردین چیست؟</a></h5>
+                </div>
+                <div class="col-2 col-xl-1">
+                    <h5><a class="footerText" href="#AttributesDiv"> قابلیت</a></h5>
+                </div>
+                <div class="col-2 col-xl-1">
+                    <h5><a class="footerText" href="#AboutUs">درباره ما </a></h5>
+                </div>
+                <div class="col-2 col-xl-1">
+                    <h5><a class="footerText" href="#ContactUs"> تماس با ما</a></h5>
+                </div>
+    
+            </div>
+        </div>
+        <script>
+            function LightDark() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+                var element2 = document.getElementById("WorkWithUsDiv");
+                element2.classList.toggle("dark-mode");
+                var element2 = document.getElementById("footer");
+                element2.classList.toggle("dark-mode");
+                var element2 = document.getElementById("navbar");
+                element2.classList.toggle("nav-dark-mode");
+                var element2 = document.getElementById("LightDarkBtn");
+                element2.classList.toggle("dark-mode-btn");
+                var element2 = document.getElementById("login");
+                element2.classList.toggle("dark-mode-log-register");
+                var element2 = document.getElementById("register");
+                element2.classList.toggle("dark-mode-log-register");
+                var element3 = document.getElementById("aboutGuardian_road");
+                element3.classList.toggle("AboutGuardian_into");
+                var element3 = document.getElementById("aboutGuardian_app");
+                element3.classList.toggle("AboutGuardian_into");
+                var element2 = document.getElementById("ContactUsDiv");
+                element2.classList.toggle("dark-mode");
+                var element2 = document.getElementById("AboutUsDiv");
+                element2.classList.toggle("dark-mode");
+                
+                var element2 = document.getElementById("attributeCar1");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar2");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar3");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar4");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar5");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar6");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar7");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar8");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar9");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar10");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar11");
+                element2.classList.toggle("dark-mode-card");
+                var element2 = document.getElementById("attributeCar12");
+                element2.classList.toggle("dark-mode-card");
+            }
+        </script>
+    </body>
+</html>

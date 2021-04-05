@@ -1,0 +1,206 @@
+
+@font-face{
+    font-family: iransans;
+    src: url("lib/fonts/iran_sans.ttf");
+}
+@font-face{
+    font-family: ebtekar;
+    src: url("lib/fonts/ebtekar.ttf");
+}
+
+a{
+    direction: rtl;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+h4{
+    font-family: ebtekar !important ;
+}
+
+body{
+    background-image:url('img/milad.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-color: #a07aff ;
+    background-blend-mode:color-dodge !important;
+    height: 100% !important;
+    width: 100% !important;
+    font-family: iransans !important;
+    overflow-x: hidden;
+}
+.shadowCard{
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footerText{
+    color: white; 
+    text-shadow: 2px 2px black;
+}
+
+.form-item-text-shadow{
+    color: darkslateblue; 
+    text-shadow: 1px 1px black;
+}
+.downloadText{
+    color: white; 
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 26px;
+    font-family: iransans;
+}
+
+/* toggle dark mode*/
+.AboutGuardian_into{
+  background-color: gray !important;
+  color: white !important;
+}
+.dark-mode{
+    background-color: rgb(49, 47, 50) !important;
+    color:white !important;
+}
+.dark-mode-log-register{
+    background-color: dimgrey !important;
+    color:white !important;
+}
+.dark-mode-btn{
+    background-color: rgb(253, 253, 253) !important;
+    color:rgb(34, 31, 31) !important;
+}
+.nav-dark-mode{
+    background-color: rgb(38, 38, 66) !important;
+}
+
+/*side bar admin pannel */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: #5223c7;
+    opacity: 80%;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; 
+  }
+  .sidebar a {
+    padding: 8px 8px 8px 8px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(153, 204, 255);
+    text-shadow: 2px 2px black;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar button {
+    background: transparent;
+    border: none;
+    padding: 8px 8px 8px 8px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(153, 204, 255);
+    text-shadow: 2px 2px black;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .sidebar button:hover {
+    color: #f1f1f1;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .siderbar-darkmode{
+    background-color: rgb(26, 25, 25);
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #5223c7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(31, 30, 30);
+  }
+  
+  .openbtn-darkmode{
+    background-color: rgb(26, 25, 25);
+  }
+  
+  .driversTaleDarkMode{
+      background-color: rgb(26, 25, 25) !important;
+      color:white !important;
+  }
+  
+  .driverTableInfoItems{
+      background-color: rgb(26, 25, 25) !important;
+      color:white !important;
+  }
+  
+  #main {
+    transition: margin-left .5s; 
+    padding: 20px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .SideBar-OpenBtn{
+      border-radius: 3px 3px 3px 3px;
+      box-shadow: 2px 2px black;
+  }
+  .groups:hover{
+    transform: scale(1.25);
+    opacity: 100%;
+  }
+  .groups{
+    opacity: 88%;   
+  }
+  
+  .group_dark{
+      color:white !important;
+      background-color:#808080 !important;
+  }
+  
+  .round{
+    border-radius: 20px;
+}
+
+.profile-dark-mode{
+    background-color: rgb(26, 25, 25);
+    color:white !important;
+}
+
+.OptionsDiv-darkmode{
+    background-color: rgb(26, 25, 25);
+    color:white !important;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px white;
+}
+.rerere{
+  color: #454a8d;
+}
+
+.dark-mode-card{
+    color:white !important;
+    background-color:#808080 !important; 
+}
+

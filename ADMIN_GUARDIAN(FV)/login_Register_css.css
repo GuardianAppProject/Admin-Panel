@@ -1,0 +1,86 @@
+html{
+    height: 100%;
+}
+@font-face{
+    font-family: ebtekar;
+    src: url("lib/fonts/ebtekar.ttf");
+}
+    body{
+        background-image:url('img/milad.jpg') !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-size: cover !important;
+        background-color: #3968ff ;
+        background-blend-mode:color-dodge !important;
+        height: 100% !important;
+    }
+    .full-height{
+        height:100%;
+    }
+    .scroll_bar{
+        overflow: scroll;
+    }
+    .round{
+        border-radius: 20px;
+    }
+    .round2{
+        border-radius: 20px 20px 5px 5px;
+    }
+    .dark-mode{
+        background-color: rgb(26, 25, 25);
+        color:white;
+    }
+    
+    @keyframes submitcolor {
+        from{
+            background-color: green;
+            transform:scale(1);
+        }
+        to{
+            background-color: black;
+            transform:scale(1.2);
+        }
+    }
+    @-webkit-keyframes submitcolor {
+    from { background-color: green;
+        transform:scale(1);
+        }
+        to { background-color: black;transform:scale(1.2); }
+    }
+
+    @-moz-keyframes submitcolor {
+    from { background-color: green;transform:scale(1); }
+        to { background-color: black;transform:scale(1.2); }
+    }
+
+    @-ms-keyframes submitcolor {
+    from { background-color: green;transform:scale(1); }
+        to { background-color: black;transform:scale(1.2); }
+    }
+
+    @-o-keyframes submitcolor {
+    from { background-color: green;transform:scale(1); }
+        to { background-color: black;transform:scale(1.2); }
+    }
+
+    @keyframes submitcolor {
+    from { background-color: green;transform:scale(1); }
+        to { background-color: black;transform:scale(1.2); }
+    }
+    #submit_btn:hover{
+        background-color: black !important;
+        animation-name: submitcolor;
+        animation-duration: 2s;
+        -webkit-animation-name: submitcolor;
+        -webkit-animation-duration: 2s;
+        -moz-animation-name:submitcolor;
+        -moz-animation-duration: 2s;
+        -ms-animation-name:submitcolor;
+        -ms-animation-duration: 2s;
+        -o-animation-name:submitcolor;
+        -o-animation-duration: 2s;
+    }
+    #logo:hover{
+        transform: scale(1.1);
+    }
+    

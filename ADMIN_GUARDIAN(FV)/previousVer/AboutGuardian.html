@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>AboutGuardian</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main_css.css">
+    <script src="lib/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="LightDark.js"></script>
+</head>
+<body dir="rtl">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-primary shadow fixed-top">
+        <div class="container">
+            <a href="#"><img src="img/logo.png" width="45"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="navbar-item  m-1 mr-2" style="text-align: right;"> 
+                        <a class="nav-link" href="index.php">خانه</a>
+                    </li>
+                    <li class="navbar-item m-1  mr-2"  style="text-align: right;">
+                        <a class="nav-link" href="AdminPanel.php">پنل ادمین</a>
+                    </li>
+                    <li class="navbar-item m-1  mr-2"  style="text-align: right;">
+                        <a class="nav-link" href="adminApp.php">نصب برنامه</a>
+                    </li>
+                    <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                        <a class="nav-link" href="ContactUs.php">تماس با ما</a>
+                    </li>
+                    <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                        <a class="nav-link" href="AboutUs.php">درباره ی ما</a>
+                    </li>
+                    <li class="navbar-item m-1  mr-2 active" style="text-align: right;">
+                        <a class="nav-link" href="AboutGuardian.php">گاردین چیست؟</a>
+                    </li>
+                    <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                        <a class="nav-link" href="https://www.guardianapp.ir/">وبسایت گاردین</a>
+                    </li>
+                    <li class="navbar-item m-1  mr-2" style="text-align: right;">
+                        <button id="LightDarkBtn" class="btn btn-dark shadow round text-white" onclick="LightDark()">شب / روز</button>
+                    </li>
+                    <li class="navbar-item m-1">
+                        <a id="login" class="nav-link btn bg-white shadow round text-primary" href="login.php">ورود</a>
+                    </li>
+                    <li class="navbar-item m-1">
+                        <a id="register" class="nav-link btn bg-white shadow round text-primary" href="RegisterIn.php">ثبت نام</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div style="margin-top: 150px;"></div>
+            <div id="aboutGuardian_road" class="card shadow round" style="padding: 100px; opacity: 80%;text-align: center;">
+                <div class="card-header round shadow" style="margin-bottom: 20px;">
+                    <h4>راهکار های گاردین به من چیست؟</h4>
+                </div>
+                <img class="card-img" src="img/roadmap_guardian.png">
+            </div>
+            <div style="margin-top: 50px;"></div>
+        </div>
+        <div class="row">
+            <div style="margin-top: 50px;"></div>
+            <div id="aboutGuardian_app"  class="card shadow round" style="padding: 100px;opacity: 80%;">
+                <div class="card-header round shadow" style="text-align: center;margin-bottom: 100px;">
+                    <h4>راهکار های گاردین به من چیست؟</h4>
+                    <p>
+                        این نرم افزار کاملا هوشمند بوده و با پرسیدن سوال های صوتی و دریافت پاسخ آنها در حین سفر از راننده وهمچنین اطلاعاتی که در گذشته از کاربر محاسبه کرده و تجمیع آنها با اطلاعات سفر، تلاش می کند تا سطح هوشیاری راننده را در تمام زمان سفر در بالاترین سطح خود نگه دارد
+                    </p>
+                </div>
+                <img class="card-img" src="img/app.png">
+            </div>
+            <div style="margin-top: 250px;"></div>
+        </div>
+    </div>
+    <div id="footer" style="background-color:#4149af;height: 200px;width: 100% !important;;bottom: 0;">
+            
+        <div style="height: 20px; text-align: center;">
+            <h4 class="footerText" style="color: white;">گاردین</h4>
+            <img src="img/logo.png" width="40px">
+        </div>
+        <div class="row justify-content-center" style="margin-top:100px;">
+            <div class="col-2 col-xl-1">
+                <h5><a class="footerText" href="adminApp.php">دریافت گاردین</a></h5>
+            </div>
+            <div class="col-2 col-xl-1">
+                <h5><a class="footerText" href="index.php">همکاری با ما</a></h5>
+            </div>
+            <div class="col-2 col-xl-1">
+                <h5><a class="footerText" href="AboutGuardian.php"> گاردین چیست؟</a></h5>
+            </div>
+            <div class="col-2 col-xl-1">
+                <h5><a class="footerText" href="#"> قابلیت</a></h5>
+            </div>
+            <div class="col-2 col-xl-1">
+                <h5><a class="footerText" href="AboutUs.php">درباره ما </a></h5>
+            </div>
+            <div class="col-2 col-xl-1">
+                <h5><a class="footerText" href="ContactUs.php"> تماس با ما</a></h5>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function LightDark() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+                var element2 = document.getElementById("footer");
+                element2.classList.toggle("dark-mode");
+                var element2 = document.getElementById("navbar");
+                element2.classList.toggle("nav-dark-mode");
+                var element2 = document.getElementById("LightDarkBtn");
+                element2.classList.toggle("dark-mode-btn");
+                var element2 = document.getElementById("login");
+                element2.classList.toggle("dark-mode-log-register");
+                var element2 = document.getElementById("register");
+                element2.classList.toggle("dark-mode-log-register");
+                var element3 = document.getElementById("aboutGuardian_road");
+                element3.classList.toggle("AboutGuardian_into");
+                var element3 = document.getElementById("aboutGuardian_app");
+                element3.classList.toggle("AboutGuardian_into");
+        }
+    </script>
+</body>
+</html>
